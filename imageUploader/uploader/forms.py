@@ -6,4 +6,4 @@ class UploaderForm(forms.ModelForm):
     image = forms.FileField(max_length=200, required=True)
     class Meta:
         model = Gallery
-        fields = ("image",)
+        fields = ("image","name",)

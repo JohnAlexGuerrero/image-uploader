@@ -9,7 +9,7 @@
 <body>
     <h1>uploader</h1>
 
-    <form method="post" action="{% url 'images' %}">
+    <form method="post" action="{% url 'images' %}" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Cargar</button>
